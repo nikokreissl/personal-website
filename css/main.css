@@ -78,14 +78,34 @@ header {
 
 figure {
   margin-right: 50px;
+  position: relative;
 }
 
 .profile-picture {
   border-radius: 50%;
   border: 2px solid black;
-  /* width: 75%; */
 }
 
+.profile-picture-caption {
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 70px;
+  left: 150px;
+  width: 200%;
+
+  display: none;
+}
+
+.profile-picture-caption p {
+  color: white;
+}
+
+.profile-picture:hover + .profile-picture-caption {
+  display: block;
+}
 /* Contact */
 
 .contact {
