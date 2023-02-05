@@ -1,0 +1,86 @@
+/* Links */
+
+.links-cards {
+  display: grid;
+  grid-template-areas:
+    "git git fish"
+    "link cap cap";
+  gap: 10px;
+}
+
+.links-cards__card {
+  height: 250px;
+  font-size: 1.5rem;
+  color: var(--border-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+}
+
+.links-cards__card:hover {
+  text-decoration: none;
+  background: var(--primary-color);
+}
+
+.links-cards__card i {
+  font-size: 3rem;
+}
+
+.links-cards__card p {
+  color: var(--border-color);
+}
+
+.links-cards__card:hover p {
+  color: var(--hover-color);
+}
+
+.link-cards__card--github {
+  grid-area: git;
+  background: url(/img/Links/code-edited.png);
+}
+
+.link-cards__card--neuefische {
+  grid-area: fish;
+  background-image: url(/img/Links/fish-edited.png);
+}
+
+.link-cards__card--linkedin {
+  grid-area: cap;
+  background-image: url(/img/Links/mount-everest-edited.png);
+}
+
+.link-cards__card--capstone {
+  grid-area: link;
+  background-image: url(/img/Links/meeting-edited.png);
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .links-cards__card {
+    height: 150px;
+    font-size: 1rem;
+  }
+
+  .links-cards__card i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .links-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links-cards__card i {
+    font-size: 2rem;
+  }
+}

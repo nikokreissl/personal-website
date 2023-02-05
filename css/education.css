@@ -1,0 +1,22 @@
+/* Education */
+
+.education-card {
+  border: solid 2px var(--border-color);
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 5px 3px 15px 2px var(--border-color);
+}
+
+.education-card__first-card {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.education-last-card {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.education-card h3 {
+  margin-bottom: 10px;
+}

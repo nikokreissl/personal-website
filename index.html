@@ -4,250 +4,246 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/dde8d757b1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Niko's Personal Site</title>
   </head>
 
   <body>
-    <header class="container">
-      <div class="header">
-        <figure>
-          <img
-            class="profile-picture"
-            src="/img/profile-picture.png"
-            alt="profile-picture description"
-          />
-          <figcaption class="profile-picture-caption">
+    <div></div>
+    <div class="container-header-main">
+      <header>
+        <div class="header-container">
+          <figure>
+            <img
+              class="header__profile-picture"
+              src="/img/profile-picture.png"
+              alt="profile-picture description"
+            />
+            <figcaption class="header__profile-picture__caption">
+              <p>
+                Me enjoying a coffee during breakfast in Vienna - on my Birthday
+                BTW 🎂🥳
+              </p>
+            </figcaption>
+          </figure>
+
+          <div class="header__contact">
+            <h1>Niko Kreissl</h1>
+            <h3>Web Developer</h3>
             <p>
-              Me enjoying a coffee during breakfast in Vienna - on my Birthday
-              BTW ;-)
+              <a href="mailto:nikokreissl@gmail.com">nikokreissl@gmail.com</a>
             </p>
-          </figcaption>
-        </figure>
+            <p>Tel. 0176 312 66 485</p>
+          </div>
 
-        <div class="contact">
-          <h1>Niko Kreissl</h1>
-          <h3>Web Developer</h3>
-          <p>
-            <a href="mailto:nikokreissl@gmail.com">nikokreissl@gmail.com</a>
-          </p>
-          <p>Tel. 0176 312 66 485</p>
+          <nav class="navigation-desktop">
+            <h2>Get around</h2>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skillset">Skillset</a></li>
+              <li><a href="#links">Links</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#game-block">Play a game</a></li>
+            </ul>
+          </nav>
         </div>
-
-        <nav>
+        <div class="navigation-mobile">
           <h2>Get around</h2>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skillset">Skillset</a></li>
             <li><a href="#links">Links</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#play-a-game">Play a game</a></li>
+            <li><a href="#game-block">Play a game</a></li>
           </ul>
-        </nav>
+        </div>
+      </header>
+      <div class="main-container">
+        <main>
+          <section id="about">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              commodi molestias tenetur facilis, repellat quam exercitationem
+              accusantium quia labore ab nam similique saepe, adipisci
+              aspernatur aliquid fugiat omnis totam rem. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Iusto commodi molestias tenetur
+              facilis, repellat quam exercitationem accusantium quia labore ab
+              nam similique saepe, adipisci aspernatur aliquid fugiat omnis
+              totam rem. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Iusto commodi molestias tenetur facilis, repellat quam
+              exercitationem accusantium quia labore ab nam similique saepe,
+              adipisci aspernatur aliquid fugiat omnis totam rem.
+            </p>
+          </section>
+
+          <section id="skillset" class="skillset">
+            <h2>Skillset</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>JIRA</li>
+              <li>English</li>
+              <li>German</li>
+              <li>Github</li>
+              <li>Figma</li>
+              <li>Attention to detail</li>
+              <li>Ambitious</li>
+            </ul>
+          </section>
+
+          <section id="links">
+            <h2>Links</h2>
+            <div class="links-cards">
+              <a
+                class="links-cards__card link-cards__card--github"
+                href="https://github.com/nikokreissl"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <p>GitHub</p>
+              </a>
+
+              <a
+                class="links-cards__card link-cards__card--neuefische"
+                href="https://github.com/nikokreissl"
+                target="_blank"
+              >
+                <i class="fa-solid fa-fish-fins"></i>
+                <p>neuefische</p>
+              </a>
+
+              <a
+                class="links-cards__card link-cards__card--linkedin"
+                href="https://github.com/nikokreissl"
+                target="_blank"
+              >
+                <i class="fa-solid fa-code"></i>
+                <p>Capstone Project</p>
+              </a>
+
+              <a
+                class="links-cards__card link-cards__card--capstone"
+                href="https://github.com/nikokreissl"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                <p>LinkedIn</p>
+              </a>
+            </div>
+          </section>
+
+          <section id="education">
+            <h2>Education</h2>
+            <article class="education-card education-card__first-card">
+              <h3>
+                Web Development Bootcamp @ neue Fische / January - April 2023
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus, modi quaerat. Officia temporibus molestiae quia at
+                voluptate magnam necessitatibus laudantium, corrupti modi quod
+                accusantium reprehenderit et exercitationem, alias, laborum
+                consequatur?
+              </p>
+            </article>
+
+            <article class="education-card">
+              <h3>
+                Product & Project Manager @ Team Seefried Group / July 2017 -
+                December 2022
+              </h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+                a sint nulla laudantium molestiae soluta vitae molestias eveniet
+                quae est facilis hic, maxime rem neque ea voluptatum. Ipsum,
+                magni libero!
+              </p>
+            </article>
+
+            <article class="education-card education-last-card">
+              <h3>Abitur @ Gymnasium Tutzing / September 2006 - May 2014</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae voluptatem sunt autem id voluptatum hic rem quidem,
+                optio modi recusandae eum quibusdam tenetur temporibus magnam
+                cum expedita odit illum libero!
+              </p>
+            </article>
+          </section>
+
+          <section id="interests">
+            <h2>Interests</h2>
+            <article class="interest-block">
+              <img
+                class="interest-block__image"
+                src="/img/Interests/travel.png"
+                alt="Traveling"
+              />
+              <div class="interest-block__text">
+                <h3>Traveling</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Fugit, veritatis nesciunt nemo provident officia, nam corporis
+                  ipsum molestiae nulla est nostrum, alias autem sed doloremque
+                  repellat itaque libero mollitia cum.
+                </p>
+              </div>
+            </article>
+
+            <article class="interest-block">
+              <div class="interest-block__text--left">
+                <h3>Sports</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Fugit, veritatis nesciunt nemo provident officia, nam corporis
+                  ipsum molestiae nulla est nostrum, alias autem sed doloremque
+                  repellat itaque libero mollitia cum.
+                </p>
+              </div>
+              <img
+                class="interest-block__image"
+                src="/img/Interests/football.png"
+                alt="Sports"
+              />
+            </article>
+
+            <article class="interest-block">
+              <img
+                class="interest-block__image"
+                src="/img/Interests/gaming.png"
+                alt="Gaming"
+              />
+              <div class="interest-block__text">
+                <h3>Video Games</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Fugit, veritatis nesciunt nemo provident officia, nam corporis
+                  ipsum molestiae nulla est nostrum, alias autem sed doloremque
+                  repellat itaque libero mollitia cum.
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section id="game-block">
+            <h2>Play a game</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+              distinctio velit quia. Error eligendi sequi praesentium ratione
+              eius aut animi fuga facere, qui necessitatibus voluptatum
+              repellendus? Libero doloremque dignissimos labore.
+            </p>
+            <div>Game here</div>
+          </section>
+        </main>
+        <a class="button-back-up-top" href="#">UP</a>
       </div>
-    </header>
-
-    <div class="main">
-      <main class="container">
-        <section id="about">
-          <h2>About</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            commodi molestias tenetur facilis, repellat quam exercitationem
-            accusantium quia labore ab nam similique saepe, adipisci aspernatur
-            aliquid fugiat omnis totam rem. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Iusto commodi molestias tenetur
-            facilis, repellat quam exercitationem accusantium quia labore ab nam
-            similique saepe, adipisci aspernatur aliquid fugiat omnis totam rem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            commodi molestias tenetur facilis, repellat quam exercitationem
-            accusantium quia labore ab nam similique saepe, adipisci aspernatur
-            aliquid fugiat omnis totam rem.
-          </p>
-        </section>
-
-        <section id="skillset" class="skillset">
-          <h2>Skillset</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>JIRA</li>
-            <li>English</li>
-            <li>German</li>
-            <li>Github</li>
-            <li>Figma</li>
-            <li>Attention to detail</li>
-            <li>Ambitious</li>
-          </ul>
-        </section>
-
-        <section id="links">
-          <h2>Links</h2>
-          <div class="link-cards">
-            <article id="github">
-              <a
-                class="link-card"
-                href="https://github.com/nikokreissl"
-                target="_blank"
-              >
-                <img
-                  class="link-card-picture"
-                  src="/img/Links/github.svg"
-                  alt="github logo"
-                />
-                <h3>Github</h3>
-              </a>
-            </article>
-
-            <article id="neue-fische">
-              <a
-                class="link-card"
-                href="https://talents.neuefische.de/profile/6ec9b039-485b-4ba3-a7a4-8e1022c91f49"
-                target="_blank"
-              >
-                <img
-                  class="link-card-picture"
-                  src="/img/Links/fish-solid.svg"
-                  alt="neue-fische logo"
-                />
-                <h3>neuefische</h3>
-              </a>
-            </article>
-
-            <article id="linkedin">
-              <a class="link-card" href="https://linkedin.com/" target="_blank">
-                <img
-                  class="link-card-picture"
-                  src="/img/Links/linkedin.svg"
-                  alt="linkedIn logo"
-                />
-                <h3>LinkedIn</h3>
-              </a>
-            </article>
-
-            <article id="capstone">
-              <a
-                class="link-card"
-                href="https://github.com/nikokreissl"
-                target="_blank"
-              >
-                <img
-                  class="link-card-picture"
-                  src="/img/Links/code-solid.svg"
-                  alt="code image"
-                />
-                <h3>Capstone</h3>
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section id="education">
-          <h2>Education</h2>
-          <article class="education-card first">
-            <h3>
-              Web Development Bootcamp @ neue Fische / January - April 2023
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus, modi quaerat. Officia temporibus molestiae quia at
-              voluptate magnam necessitatibus laudantium, corrupti modi quod
-              accusantium reprehenderit et exercitationem, alias, laborum
-              consequatur?
-            </p>
-          </article>
-
-          <article class="education-card">
-            <h3>
-              Product & Project Manager @ Team Seefried Group / July 2017 -
-              December 2022
-            </h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem a
-              sint nulla laudantium molestiae soluta vitae molestias eveniet
-              quae est facilis hic, maxime rem neque ea voluptatum. Ipsum, magni
-              libero!
-            </p>
-          </article>
-
-          <article class="education-card last">
-            <h3>Abitur @ Gymnasium Tutzing / September 2006 - May 2014</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-              voluptatem sunt autem id voluptatum hic rem quidem, optio modi
-              recusandae eum quibusdam tenetur temporibus magnam cum expedita
-              odit illum libero!
-            </p>
-          </article>
-        </section>
-
-        <section id="interests">
-          <h2>Interests</h2>
-          <article class="interest">
-            <img
-              class="interest-image"
-              src="/img/Interests/travel.png"
-              alt="Traveling"
-            />
-            <div class="interest-text">
-              <h3>Traveling</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
-                veritatis nesciunt nemo provident officia, nam corporis ipsum
-                molestiae nulla est nostrum, alias autem sed doloremque repellat
-                itaque libero mollitia cum.
-              </p>
-            </div>
-          </article>
-
-          <article class="interest">
-            <div class="interest-text-left">
-              <h3>Sports</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
-                veritatis nesciunt nemo provident officia, nam corporis ipsum
-                molestiae nulla est nostrum, alias autem sed doloremque repellat
-                itaque libero mollitia cum.
-              </p>
-            </div>
-            <img
-              class="interest-image"
-              src="/img/Interests/football.png"
-              alt="Sports"
-            />
-          </article>
-
-          <article class="interest">
-            <img
-              class="interest-image"
-              src="/img/Interests/gaming.png"
-              alt="Gaming"
-            />
-            <div class="interest-text">
-              <h3>Video Games</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
-                veritatis nesciunt nemo provident officia, nam corporis ipsum
-                molestiae nulla est nostrum, alias autem sed doloremque repellat
-                itaque libero mollitia cum.
-              </p>
-            </div>
-          </article>
-        </section>
-
-        <section id="play-a-game">
-          <h2>Play a game</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-            distinctio velit quia. Error eligendi sequi praesentium ratione eius
-            aut animi fuga facere, qui necessitatibus voluptatum repellendus?
-            Libero doloremque dignissimos labore.
-          </p>
-          <div>Game here</div>
-        </section>
-      </main>
-      <a class="back-up-top" href="#">UP</a>
     </div>
 
     <footer>

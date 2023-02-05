@@ -1,0 +1,18 @@
+/* Skillset */
+
+.skillset ul {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillset ul li {
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.skillset ul li:hover {
+  cursor: default;
+}
